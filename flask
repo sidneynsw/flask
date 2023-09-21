@@ -1,0 +1,17 @@
+# Importe o módulo Flask
+from flask import Flask
+
+# Crie uma instância da aplicação Flask
+app = Flask(__name__)
+
+# Defina uma rota e uma função de visualização
+@app.route('/')
+def hello():
+    return 'Olá, Flask!'
+
+# Verifique se o arquivo está sendo executado diretamente
+if __name__ == '__main__':
+    # Execute a aplicação Flask
+    app.run()
+#Para instalá-lo em uma ambiente Python use pip install Flask
+depois execulte o diretório que foi salvo.
